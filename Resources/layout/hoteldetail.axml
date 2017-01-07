@@ -15,21 +15,21 @@
         android:layout_height="wrap_content"
         android:id="@+id/hotelname" />
     <TextView
-      android:text="Address"
-      android:textAppearance="?android:attr/textAppearanceMedium"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/hotelAddresslabel" />
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotelAddresslabel" />
     <TextView
         android:text=""
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/hotelAddress1" />
     <TextView
-      android:text=""
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/hotelAddress2" />
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotelAddress2" />
     <TextView
         android:text=""
         android:layout_width="match_parent"
@@ -47,14 +47,25 @@
         android:layout_height="wrap_content"
         android:id="@+id/hoteltheme" />
     <TextView
-      android:text="Cost Range"
-      android:textAppearance="?android:attr/textAppearanceMedium"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/hotelcostlabel" />
+        android:text="Cost Range"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotelcostlabel" />
     <TextView
         android:text=""
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/hotelcost" />
+    <TextView
+      android:text="Category"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/hotelcategorylabel" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotelcategory" />
 </LinearLayout>

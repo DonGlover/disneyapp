@@ -37,6 +37,7 @@ namespace disneyapp
             ArrayAdapter<string> listAdapter = new ArrayAdapter<string>(this, Resource.Layout.parksrow, AttractionNames);
             ListAdapter = listAdapter;
         }
+
         protected override void OnListItemClick(ListView l, View v, int position, long id)
         {
             base.OnListItemClick(l, v, position, id);

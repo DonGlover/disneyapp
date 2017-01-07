@@ -30,7 +30,7 @@ namespace disneyapp
             TextView tvName = (TextView)FindViewById(Resource.Id.attractionName);
             tvName.Text = SelectedAttraction.name;
             TextView tvScope = (TextView)FindViewById(Resource.Id.scope);
-            tvScope.Text = SelectedAttraction.scope_and_scale_code;
+            tvScope.Text = SelectedAttraction.scope_and_scale_code.Replace("_", " ");
             TextView tvOpened = (TextView)FindViewById(Resource.Id.opened);
             tvOpened.Text = SelectedAttraction.opened_on;
             TextView tvDesc = (TextView)FindViewById(Resource.Id.description);

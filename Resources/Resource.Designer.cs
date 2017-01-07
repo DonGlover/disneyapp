@@ -60,8 +60,8 @@ namespace disneyapp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050015
-			public const int activityviews = 2131034133;
+			// aapt resource value: 0x7f050017
+			public const int activityviews = 2131034135;
 			
 			// aapt resource value: 0x7f050001
 			public const int attractionName = 2131034113;
@@ -72,47 +72,47 @@ namespace disneyapp
 			// aapt resource value: 0x7f050006
 			public const int descriptionlabel = 2131034118;
 			
-			// aapt resource value: 0x7f05001c
-			public const int diningcosttype = 2131034140;
-			
-			// aapt resource value: 0x7f05001b
-			public const int diningcosttypelabel = 2131034139;
-			
 			// aapt resource value: 0x7f05001e
-			public const int diningcuisine = 2131034142;
+			public const int diningcosttype = 2131034142;
 			
 			// aapt resource value: 0x7f05001d
-			public const int diningcuisinelabel = 2131034141;
-			
-			// aapt resource value: 0x7f050022
-			public const int diningentreeprice = 2131034146;
-			
-			// aapt resource value: 0x7f050021
-			public const int diningentreepricelabel = 2131034145;
-			
-			// aapt resource value: 0x7f050018
-			public const int diningname = 2131034136;
-			
-			// aapt resource value: 0x7f050017
-			public const int diningnamelabel = 2131034135;
+			public const int diningcosttypelabel = 2131034141;
 			
 			// aapt resource value: 0x7f050020
-			public const int diningphone = 2131034144;
+			public const int diningcuisine = 2131034144;
 			
 			// aapt resource value: 0x7f05001f
-			public const int diningphonelabel = 2131034143;
+			public const int diningcuisinelabel = 2131034143;
 			
 			// aapt resource value: 0x7f050024
-			public const int diningspecialties = 2131034148;
+			public const int diningentreeprice = 2131034148;
 			
 			// aapt resource value: 0x7f050023
-			public const int diningspecialtieslabel = 2131034147;
+			public const int diningentreepricelabel = 2131034147;
 			
 			// aapt resource value: 0x7f05001a
-			public const int diningtype = 2131034138;
+			public const int diningname = 2131034138;
 			
 			// aapt resource value: 0x7f050019
-			public const int diningtypelabel = 2131034137;
+			public const int diningnamelabel = 2131034137;
+			
+			// aapt resource value: 0x7f050022
+			public const int diningphone = 2131034146;
+			
+			// aapt resource value: 0x7f050021
+			public const int diningphonelabel = 2131034145;
+			
+			// aapt resource value: 0x7f050026
+			public const int diningspecialties = 2131034150;
+			
+			// aapt resource value: 0x7f050025
+			public const int diningspecialtieslabel = 2131034149;
+			
+			// aapt resource value: 0x7f05001c
+			public const int diningtype = 2131034140;
+			
+			// aapt resource value: 0x7f05001b
+			public const int diningtypelabel = 2131034139;
 			
 			// aapt resource value: 0x7f050008
 			public const int golabel = 2131034120;
@@ -125,6 +125,12 @@ namespace disneyapp
 			
 			// aapt resource value: 0x7f05000d
 			public const int hotelAddresslabel = 2131034125;
+			
+			// aapt resource value: 0x7f050016
+			public const int hotelcategory = 2131034134;
+			
+			// aapt resource value: 0x7f050015
+			public const int hotelcategorylabel = 2131034133;
 			
 			// aapt resource value: 0x7f050014
 			public const int hotelcost = 2131034132;
@@ -159,8 +165,8 @@ namespace disneyapp
 			// aapt resource value: 0x7f05000a
 			public const int parkname = 2131034122;
 			
-			// aapt resource value: 0x7f050016
-			public const int rowTextView = 2131034134;
+			// aapt resource value: 0x7f050018
+			public const int rowTextView = 2131034136;
 			
 			// aapt resource value: 0x7f050003
 			public const int scope = 2131034115;

@@ -41,6 +41,8 @@ namespace disneyapp
             tvTheme.Text = SelectedHotel.theme;
             TextView tvCost = (TextView)FindViewById(Resource.Id.hotelcost);
             tvCost.Text = SelectedHotel.cost_range;
+            TextView tvCategory = (TextView)FindViewById(Resource.Id.hotelcategory);
+            tvCategory.Text = SelectedHotel.category_code.Replace("_", " ");
         }
     }
 }
