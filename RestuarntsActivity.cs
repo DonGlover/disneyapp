@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace disneyapp
 {
-    [Activity(Label = "Dining Options")]
+    [Activity(Label = "")]
     public class RestaurantsActivity : ListActivity
     {
         FetchAsync FA = new FetchAsync();
@@ -31,6 +31,7 @@ namespace disneyapp
 
         private void ParseAndDisplay(JsonValue json)
         {
+            this.Title = park.Replace("-", " ").ToUpperInvariant();
             string JsonString = json.ToString();
             string js2 = JsonString.Substring(1, JsonString.Length - 2).Replace("], [", ",");
             ResortList = JsonConvert.DeserializeObject<List<resort>>(js2);

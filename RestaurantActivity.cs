@@ -16,7 +16,7 @@ using Newtonsoft.Json;
 
 namespace disneyapp
 {
-    [Activity(Label = "Restaurant Information")]
+    [Activity(Label = "")]
     public class RestaurantActivity : Activity
     {
         async protected override void OnCreate(Bundle savedInstanceState)
@@ -35,11 +35,9 @@ namespace disneyapp
         private void ParseAndDisplay(JsonValue json)
         {
             restaurantDetail SelectedRestaurant = JsonConvert.DeserializeObject<restaurantDetail>(json.ToString());
-
-            TextView tvName = (TextView)FindViewById(Resource.Id.diningname);
-            tvName.Text = SelectedRestaurant.name;
+            this.Title = SelectedRestaurant.name;
             TextView tvType = (TextView)FindViewById(Resource.Id.diningtype);
-            tvType.Text = SelectedRestaurant.category_code;
+            tvType.Text = SelectedRestaurant.category_code.Replace("_", " "); 
             TextView tvCost = (TextView)FindViewById(Resource.Id.diningcosttype);
             tvCost.Text = SelectedRestaurant.cost_code;
             TextView tvCuisine = (TextView)FindViewById(Resource.Id.diningcuisine);

@@ -29,8 +29,8 @@ namespace disneyapp
         private void ParseAndDisplay(JsonValue json)
         {
             hotelDetail SelectedHotel = JsonConvert.DeserializeObject<hotelDetail>(json.ToString());
-            TextView tvName = (TextView)FindViewById(Resource.Id.hotelname);
-            tvName.Text = SelectedHotel.name;
+
+            this.Title = SelectedHotel.name;
             TextView tvAddr1 = (TextView)FindViewById(Resource.Id.hotelAddress1);
             tvAddr1.Text = SelectedHotel.address;
             TextView tvAddr2 = (TextView)FindViewById(Resource.Id.hotelAddress2);

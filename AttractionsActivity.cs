@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace disneyapp
 {
-    [Activity(Label = "Park Attractions")]
+    [Activity(Label = "")]
     public class AttractionsActivity : ListActivity
     {
         string park;
@@ -30,6 +30,8 @@ namespace disneyapp
 
         private void ParseAndDisplay(JsonValue json)
         {
+            this.Title = park.Replace("-", " ").ToUpperInvariant();
+
             AttractionsList = JsonConvert.DeserializeObject<List<attractions>>(json.ToString());
             List<string> AttractionNames = new List<string>();
             foreach (attractions a in AttractionsList)

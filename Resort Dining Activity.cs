@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace disneyapp
 {
-    [Activity(Label = "Resort Dining Options")]
+    [Activity(Label = "Resorts")]
     public class Resort_Dining_Activity : ListActivity
     {
         string location;
@@ -44,9 +44,9 @@ namespace disneyapp
             base.OnListItemClick(l, v, position, id);
 
             var intent = new Intent(this, typeof(ResortRestaurantsActivity));
-            intent.PutExtra("park", "walt-disney-world");
+            intent.PutExtra("park", ResortList[position].name);
             JsonValue dinings = JsonConvert.SerializeObject(ResortList[position].dinings);
-            intent.PutExtra("restuarnts", (string) dinings);
+            intent.PutExtra("restaurants", (string) dinings);
             StartActivity(intent);
         }
 

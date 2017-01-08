@@ -64,7 +64,7 @@ namespace disneyapp.models
         public string match_name { get; set; }
         public string crazy_threshold { get; set; }
         public bool fastpass_only { get; set; }
-        public bool allow_showtimes_after_close { get; set; }
+        public string allow_showtimes_after_close { get; set; }
         public bool disconnected_fastpass_booth { get; set; }
         public string crowd_calendar_group { get; set; }
         public string arrive_before { get; set; }

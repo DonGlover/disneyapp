@@ -3,17 +3,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <TextView
-      android:text="Name"
-      android:textAppearance="?android:attr/textAppearanceMedium"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/namelabel" />
-  <TextView
-        android:text=" "
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/attractionName" />
     <TextView
         android:text="Category"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -58,4 +47,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/whentogo" />
+    <TextView
+        android:text="Duration"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/durationlabel" />
+    <TextView
+        android:text=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/duration" />
+    <TextView
+        android:text="Average Wait Time per 100 people"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/awtlabel" />
+    <TextView
+        android:text=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/waittime" />
 </LinearLayout>

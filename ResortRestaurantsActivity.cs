@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace disneyapp
 {
-    [Activity(Label = "Resort Restaurants")]
+    [Activity(Label = "")]
     public class ResortRestaurantsActivity : ListActivity
     {
         List<restaurant> RestaurantList = new List<restaurant>();
@@ -21,7 +21,14 @@ namespace disneyapp
         {
             base.OnCreate(savedInstanceState);
             park = Intent.GetStringExtra("park") ?? "Data not available";
-            string json = Intent.GetStringExtra("restuarnts") ?? "Data not available";
+            string json = Intent.GetStringExtra("restaurants") ?? "Data not available";
+
+        }
+
+        private void ParseAndDisplay(string json)
+        {
+            this.Title = park;
+
             RestaurantList = JsonConvert.DeserializeObject<List<restaurant>>(json);
             List<string> RestaurantNames = new List<string>();
             foreach (restaurant r in RestaurantList)
@@ -29,8 +36,10 @@ namespace disneyapp
                 RestaurantNames.Add(r.name);
             }
             ArrayAdapter<string> listAdapter = new ArrayAdapter<string>(this, Resource.Layout.parksrow, RestaurantNames);
+            
             ListAdapter = listAdapter;
         }
+
         protected override void OnListItemClick(ListView l, View v, int position, long id)
         {
             base.OnListItemClick(l, v, position, id);
