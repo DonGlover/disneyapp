@@ -44,9 +44,11 @@ namespace disneyapp
             base.OnListItemClick(l, v, position, id);
 
             var intent = new Intent(this, typeof(ResortRestaurantsActivity));
+            intent.PutExtra("permalink", ResortList[position].permalink);
             intent.PutExtra("park", ResortList[position].name);
             JsonValue dinings = JsonConvert.SerializeObject(ResortList[position].dinings);
             intent.PutExtra("restaurants", (string) dinings);
+            
             StartActivity(intent);
         }
 

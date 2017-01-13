@@ -17,12 +17,14 @@ namespace disneyapp
     {
         List<restaurant> RestaurantList = new List<restaurant>();
         string park;
+        string resortpermalink;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             park = Intent.GetStringExtra("park") ?? "Data not available";
             string json = Intent.GetStringExtra("restaurants") ?? "Data not available";
-
+            resortpermalink = Intent.GetStringExtra("permalink") ?? "Data not available";
+            ParseAndDisplay(json);
         }
 
         private void ParseAndDisplay(string json)
@@ -46,7 +48,7 @@ namespace disneyapp
 
             var intent = new Intent(this, typeof(RestaurantActivity));
             intent.PutExtra("permalink", RestaurantList[position].permalink);
-            intent.PutExtra("park", park);
+            intent.PutExtra("park", "walt-disney-world");
             StartActivity(intent);
         }
     }
